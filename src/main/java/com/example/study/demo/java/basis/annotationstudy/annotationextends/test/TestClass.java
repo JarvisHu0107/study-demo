@@ -46,6 +46,7 @@ public class TestClass {
      */
 
     /**
-     * 特例子 Feign有自己的注解继承方案
+     * 特例  Feign的接口和Controller之间的继承。@RestController  @RequestMapping
+     * mvc层面的源码中只要这个类（beanType）有controller注解 或 requestMapping注解就是一个handler，就有请求映射url和处理类的关系
      */
 }
