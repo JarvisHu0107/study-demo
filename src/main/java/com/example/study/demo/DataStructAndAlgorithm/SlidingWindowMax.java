@@ -1,4 +1,4 @@
-package com.example.study.demo.java.DataStructAndAlgorithm;
+package com.example.study.demo.DataStructAndAlgorithm;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

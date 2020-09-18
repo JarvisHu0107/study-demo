@@ -2,7 +2,6 @@ server:
   port: 8080
 
 
-
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -59,3 +58,9 @@ spring:
         wall:
           config:
             multi-statement-allow: true
+  profiles:
+    active:  dev
+
+huxin:
+  name: huxin
+  telNo: 110

@@ -1,6 +1,6 @@
-package com.example.study.demo.java.DataStructAndAlgorithm;
+package com.example.study.demo.DataStructAndAlgorithm;
 
-import com.example.study.demo.java.DataStructAndAlgorithm.Bean.TreeNode;
+import com.example.study.demo.DataStructAndAlgorithm.Bean.TreeNode;
 
 import java.util.Stack;
 

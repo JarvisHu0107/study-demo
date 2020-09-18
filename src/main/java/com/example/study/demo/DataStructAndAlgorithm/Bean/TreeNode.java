@@ -1,4 +1,4 @@
-package com.example.study.demo.java.DataStructAndAlgorithm.Bean;
+package com.example.study.demo.DataStructAndAlgorithm.Bean;
 
 public class TreeNode {
         public int val;
