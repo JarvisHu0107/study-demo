@@ -9,16 +9,16 @@ spring:
     druid:
       # 主库数据源
       master:
-        url: jdbc:mysql://47.111.89.82:3306/etc_test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&allowMultiQueries=true
-        username: xx
-        password: xxxx
+        url: jdbc:mysql://120.55.193.51:3306/sanxb_online_loan?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&allowMultiQueries=true
+        username: root
+        password: food@INSPECT@20151103
       # 从库数据源
       slave:
         # 从数据源开关/默认关闭
-        enabled: true
+        enabled: false
         url: jdbc:mysql://120.55.193.51:3306/test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&allowMultiQueries=true
-        username: xx
-        password: xxxxxx
+        username: root
+        password: food@INSPECT@20151103
       # 初始连接数
       initial-size: 10
       # 最小连接池数量
@@ -60,7 +60,30 @@ spring:
             multi-statement-allow: true
   profiles:
     active:  dev
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: redis
+    timeout: 6000
+    lettuce:
+      pool:
+        max-active: 8
+        min-idle: 1
+        max-wait: -1
+        max-idle: 8
+    redisson:
+      ##下面4种均可
+      ##file: classpath:/config/redisson.yml
+      ##file: classpath:/redisson.yml
+      ##file: file:./redisson.yml
+      file: file:./config/redisson.yml
 
 huxin:
   name: huxin
   telNo: 110
+
+
+rocketmq:
+  name-server: 59.175.137.42:10009
+  producer:
+    group: dev-group
